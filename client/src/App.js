@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-const Blog = lazy(() => import('./components/Blog'));
+const Blog = lazy(() => import('./Components/Blog'));
 
 function App() {
 
