@@ -21,6 +21,7 @@ export default class ErrorBoundary extends Component {
             src="https://rb.gy/qnfmja"
             width="250"
             height="250"
+            className="tubbyNugget"
           />
         </>
       );

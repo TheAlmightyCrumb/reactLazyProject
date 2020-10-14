@@ -1,38 +1,38 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Sniglet&display=swap');
+/* font-family: 'Sniglet', cursive, 'Nunito', sans-serif; */
+
+body {
+  background-color: #002352;
+}
+
+#blog {
+  color: white;
+  margin: auto;
+}
+
+#blog-headline {
+  font-family: 'Sniglet', cursive;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#blog-content {
+  font-family: 'Nunito', sans-serif;
+  text-align: justify;
+  width: 50%;
+  margin: auto;
+  text-justify: inter-word;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#comments, #form, #error-btn {
+  font-family: 'Nunito', sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 50%;
+  margin: auto;
+  margin-top: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tubbyNugget {
+  margin: auto;
+  display: block;
 }
