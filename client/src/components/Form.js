@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react'
+import { create } from '../Network/CRUD';
 
 export default function Form(props) {
 
@@ -10,8 +11,12 @@ export default function Form(props) {
         if (e.key === 'Enter') contentInput.current.focus();
     }
 
-    const onSubmit = () => {
+    const onSubmit = async () => {
         addComment({
+            name: nameInput.current.value,
+            content: contentInput.current.value
+        })
+        await create('/comments/create', {
             name: nameInput.current.value,
             content: contentInput.current.value
         })

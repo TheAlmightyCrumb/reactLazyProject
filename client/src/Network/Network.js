@@ -1,7 +1,7 @@
-export function Network(endpoint, { body, ...customConfig } = {}) {
+export default async function Network(endpoint, { body, ...customConfig } = {}) {
   const headers = {
     "content-type": "application/json",
-    Authorization: `Bearer ${Cookies.get("accessToken")}`,
+    // Authorization: `Bearer ${Cookies.get("accessToken")}`,
   };
 
   const config = {
@@ -16,7 +16,7 @@ export function Network(endpoint, { body, ...customConfig } = {}) {
   if (body) {
     config.body = JSON.stringify(body);
   }
-  
+
   return fetch(endpoint, config).then(async (response) => {
     const data = await response.json();
     if (response.ok) {
