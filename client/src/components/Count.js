@@ -6,8 +6,8 @@ export default function Count() {
     if (!count) throw Error('New Error');
 
     return (
-        <div id='error-btn'>
-            <button onClick={() => setCount(false)}>Check Our Error Handling!</button>
+        <div>
+            <button className='error-btn' onClick={() => setCount(false)}>Check Our Error Handling!</button>
         </div>
     )
 }

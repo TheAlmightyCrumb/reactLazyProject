@@ -15,6 +15,16 @@ body {
   text-align: center;
 }
 
+.headlines {
+  font-family: 'Sniglet', cursive;
+  text-align: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 5px 0;
+  margin: 25px auto auto auto;
+  width: 400px;
+}
+
 #blog-content {
   font-family: 'Nunito', sans-serif;
   text-align: justify;
@@ -35,4 +45,78 @@ body {
 .tubbyNugget {
   margin: auto;
   display: block;
+}
+
+#form {
+  display: flex;
+  flex-flow: column wrap;
+  width: 450px;
+}
+
+.name-input {
+  padding: 10px;
+  font-family: 'Nunito', sans-serif;
+  transition: 400ms;
+  margin-bottom: 10px;
+}
+
+.name-input:focus {
+  padding: 10px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  background-color: #A4C7F4;
+}
+
+.comment-input {
+  padding: 10px;
+  font-family: 'Nunito', sans-serif;
+  transition: 400ms;
+  margin-bottom: 10px;
+}
+
+.comment-input:focus {
+  padding: 10px 10px 65px 10px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  background-color: #A4C7F4;
+  transform-origin: top;
+}
+
+input:focus::-webkit-input-placeholder 
+{
+    color: transparent;
+}
+
+.add-comment-btn {
+  margin: auto;
+  font-family: 'Nunito', sans-serif;
+  background-color: #A4C7F4;
+  padding: 5px;
+  border: 2px solid #A4C7F4;
+  transition: 400ms;
+}
+.add-comment-btn:hover {
+  margin: auto;
+  font-family: 'Nunito', sans-serif;
+  background-color: #002352;
+  padding: 5px;
+  border: 2px solid white;
+  color: white;
+}
+
+.error-btn {
+  margin: auto;
+  font-family: 'Nunito', sans-serif;
+  background-color: #A4C7F4;
+  padding: 5px;
+  border: 2px solid #A4C7F4;
+  transition: 400ms;
+}
+.error-btn:hover {
+  margin: auto;
+  font-family: 'Nunito', sans-serif;
+  background-color: #002352;
+  padding: 5px;
+  border: 2px solid white;
+  color: white;
 }

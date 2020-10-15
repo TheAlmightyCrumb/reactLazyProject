@@ -71,15 +71,17 @@ export default function Blog() {
         cubilia curae; Vivamus purus nunc, condimentum vel porta vitae,
         facilisis eu orci.
       </p>
+      <h2 className='headlines'>Comments</h2>
       {comments.map((item, i) => {
         return (
           <div key={i} id="comments">
-            <div>Name: {item.name}</div>
+            <div>{item.name}</div>
             <div>{item.content}</div>
             <br />
           </div>
         );
       })}
+      <h2 className='headlines'>Join the Discussion</h2>
       <Form addComment={addComment} />
       <ErrorBoundary>
         <Count />
