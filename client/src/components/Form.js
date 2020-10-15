@@ -31,7 +31,7 @@ export default function Form(props) {
     return (
         <div id="form">
             <input className='name-input' ref={nameInput} onKeyUp={(e) => onNameKeyUp(e)} placeholder='Name...' />
-            <input className='comment-input' ref={contentInput} placeholder='Share your thoughts...' />
+            <textarea className='comment-input' ref={contentInput} placeholder='Share your thoughts...' />
             <button className='add-comment-btn' onClick={() => onSubmit()}>Add Comment</button>
         </div>
     )
