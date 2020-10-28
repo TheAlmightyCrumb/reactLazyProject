@@ -3,12 +3,16 @@ import Form from "./Form";
 import ErrorBoundary from "./ErrorBoundary";
 import Count from "./Count";
 import { read } from "../Network/CRUD";
+import track from "../Analytics/Mixpanel";
 
 export default function Blog() {
   const [comments, setComments] = useState([]);
 
   useEffect(() => {
-    read("/comments/read").then((res) => setComments(res));
+    read("/comments/read").then((res) => {
+      setComments(res);
+      track("comments loaded");
+    });
   }, []);
 
   const addComment = (newComment) => {

@@ -149,3 +149,9 @@ input:focus::-webkit-input-placeholder
   border: 2px solid white;
   color: white;
 }
+
+.notFound {
+  font-family: 'Nunito', sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
